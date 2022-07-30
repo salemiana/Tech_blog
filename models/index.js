@@ -1,14 +1,19 @@
-const { Model, Datatypes } = require('sequelize');
-const sequelize = require('../config/connections');
+const User = require('./User');
+const Post = require('./Post');
+const Comment = require('./Comment');
 
-class Comment extends Model {}
 
-Comment.init({
-    id: {
-        type: DataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
-    }
+User.hasmany(Post, { foreignKey: 'user_id' });
 
-    
-})
+Post.belongsTo(User, { foreignKey: 'user_id' });
+
+Comment.belongsTo(User, { foreignKey: 'user_id' });
+
+Comment.belongsTo(Post, { foreignKey: 'post_id' });
+
+User.hasmany(Comment, { foreignKey: 'user_id' });
+
+Post.hasmany(Comment, { foreignKey: 'post_id' });
+
+module.exports = { User, Comment, Post}
+
