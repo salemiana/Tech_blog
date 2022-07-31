@@ -5,7 +5,7 @@ class Post extends Model {}
 Post.init(
   {
     id: {
-      type: Datatypes.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
@@ -15,7 +15,7 @@ Post.init(
       allowNull: false,
     },
     content: {
-      type: Datatypes.TEXT,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     user_id: {
