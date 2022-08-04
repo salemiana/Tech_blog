@@ -1,28 +1,37 @@
 * {
     box-sizing: border-box;
   }
+
+  :root {
+    --primary: #ccdad1;
+    --secondary: #dce9d5;
+    --tertiary: #788585;
+    --light-dark: #a1a0a1;
+    --dark: #201110;
+    --border-radius: .3rem;
+}
   
-  body, html {
-    height: 100%;
+  body {
+    background-color: var(--primary);
     padding: 0;
     margin: 0;
     font-family: sans-serif;
     color: #333;
   }
   
-  a {
+  h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color: #16171a;
     font-weight: bold;
     transition: color .1s;
   }
   
-  a:hover {
-    color: #3486eb;
+  button:hover {
+    color: #baeb34;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: var(--light-dark);
     border: 0;
     padding: 1%;
     color: white;
@@ -74,7 +83,7 @@
     flex-direction: column;
   }
   
-  header {
+  /* header {
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
@@ -85,7 +94,7 @@
   header h1 {
     font-size: 1em;
   }
-  
+   */
   main {
     flex: 1;
     padding: 2% 4%;
@@ -176,3 +185,26 @@
     padding: 1%;
     font-size: 110%;
   }
+  .card {
+    margin: 0 0 20px 0;
+    border: 2px solid var(--dark);
+    border-radius: var(--border-radius);
+}
+
+.card-header {
+    color: var(--primary);
+    background-color: var(--dark);
+    padding: 1%;
+    border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+}
+
+.card-body {
+    padding: 1%;
+}
+
+h4 {
+    font-weight: 700;
+    margin: 0;
+    color: var(--light-dark);
+    line-height: 1.25;
+}
