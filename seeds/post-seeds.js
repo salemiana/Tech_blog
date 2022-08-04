@@ -21,25 +21,13 @@ const postdata = [
   {
     title: "In hac habitasse platea dictumst.",
     content: "http://wikia.com/turpis/eget.jpg",
-    user_id: 6,
+    user_id: 3,
   },
   {
     title: "Etiam justo.",
     content: "https://shareasale.com/quis.json",
-    user_id: 5,
-  },
-  {
-    title: "Nulla ut erat id mauris vulputate elementum.",
-    content:
-      "http://java.com/diam/neque/vestibulum/eget/vulputate/ut/ultrices.png",
-    user_id: 6,
-  },
-  {
-    title:
-      "Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-    content: "https://java.com/at/nibh/in.png",
-    user_id: 7,
-  },
+    user_id: 5
+  }
 ];
 
 const seedPosts = () => Post.bulkCreate(postdata);
