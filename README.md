@@ -1,6 +1,6 @@
-# tech_blog
 
-  <h1 align="center">Fitness-Connect</h1>
+
+  <h1 align="center">Tech_Blog</h1>
 
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
     
@@ -41,6 +41,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 
 # Deployed webpage
+https://blooming-everglades-30856.herokuapp.com/
 
 
-# Screenshot![screencapture-arcane-brook-73511-herokuapp-2022-07-06-17_36_40](https://user-images.githubusercontent.com/101297588/177660668-8c4be9f2-c848-4650-9290-d2615423071b.png)
+# Screenshot!
